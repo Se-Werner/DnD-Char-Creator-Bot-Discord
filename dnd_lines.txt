@@ -1,0 +1,23 @@
+Hill Dwarf	CON:2; WIS:1
+Mountain Dwarf	CON:2; STR:2
+High Elf	DEX:2; INT:1
+Wood Elf	DEX:2; WIS:1
+Drow	DEX:2; CHA:1
+Lightfoot Halfling	DEX:2; CHA:1
+Stout Halfling	DEX:2; CON:1
+Human	STR:1; DEX:1; CON:1; INT:1; WIS:1; CHA:1
+Dragonborn	STR:2; CHA:1
+Forest Gnome	INT:2; DEX:1
+Rock Gnome	INT:2; CON:1
+Half-Elf	CHA:2; DEX:1; WIS:1
+Half-Orc	STR:2; CON:1
+Tiefling	CHA:2; INT:1
+Protector Aasimar	CHA:2; WIS:1
+Scourge Aasimar	CHA:2; CON:1
+Fallen Aasimar	CHA:2; STR:1
+Firbolg	WIS:2; STR:1
+Goliath	STR:2; CON:1
+Kenku	DEX:2; WIS:1
+Lizardfolk	CON:2; WIS:1
+Tabaxi	DEX:2; CHA:1
+Triton	STR:1; CON:1; CHA:1
