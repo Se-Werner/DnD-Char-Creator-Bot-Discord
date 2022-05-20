@@ -199,27 +199,40 @@ def main():
         print(f'{client.user} has connected to discord')
 
     @client.event
+    async def on_guild_join(guild):
+        print(f'{client.user} has joined {guild}')
+
+    @client.event
+    async def on_guild_remove(guild):
+        print(f'{client.user} was removed from {guild}')
+
+    @client.event
     async def on_message(message):
         if message.author == client.user:
             return
 
         if message.content =='!dnd-help':
+            print('!dnd-help command executed')
             response = help_msg()
             await message.channel.send(response)
 
         if message.content =='!dnd-hallo':
+            print('!dnd-hallo command executed')
             response = 'Hello DnD World'
             await message.channel.send(response)
 
         if message.content =='!dnd-good':
+            print('!dnd-good command executed')
             response = good_generator()
             await message.channel.send(response)
 
         if message.content =='!dnd-bad':
+            print('!dnd-bad command executed')
             response = bad_generator()
             await message.channel.send(response)
 
         if message.content =='!dnd-random':
+            print('!dnd-random command executed')
             response = avg_generator()
             await message.channel.send(response)
 
