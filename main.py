@@ -1,5 +1,5 @@
 from random import randint
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import discord
 import os
 
@@ -189,7 +189,7 @@ def main():
             dict_stat[sep_single_stat[0]] = int(sep_single_stat[1])
         dnd_lines[sep_lines[0]] = dict_stat
 
-    load_dotenv()
+    # load_dotenv()
     TOKEN = os.getenv('DISCORD_TOKEN')
 
     client = discord.Client()
