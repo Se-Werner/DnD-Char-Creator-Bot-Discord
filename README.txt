@@ -29,9 +29,19 @@ for hosting the app in my own network.
 
 2. How to install and run the project
 
-Currently, the project can be run by executing it via the cmd line."python3 main.py"
+A) On local machine:
+- Install python 3.10 (tested, stable)
+- Install the needed packages via pip. Requires discord.py 1.7.3 and dotenv 0.19.2 (tested with these versions, stable)
+- Create a .env file with the content: "DISCORD_TOKEN={your_token}"
+- uncomment lines 2 and 225 in the code
+- start the application in command line
+
 To install the required packages: "python3 -m pip install discord.py dotenv"
 To run the program: "python3 main.py"
+
+B) On Docker:
+- Build the image via the dockerfile: "docker build -t {image_name}:{image_tag} --network=host ."
+- Run the container: "docker run -d -e DISCORD_TOKEN={your_token} --network=host {image_name}:{image:tag}"
 
 
 3. How to use the project
@@ -40,9 +50,9 @@ Add the bot to a server you want.
 After it has joined the server, and successfully connected (shows success message via cmd line) you can type in the following
 commands in Discord to interact with it:
 
-!dnd-help:	Shows help prompt with the available commands
-!dnd-good:	Generates a random character with a good stat spread for the generated class
-!dnd-bad:	Generates a random character with a bad stat spread for the generated class
+!dnd-help:	    Shows help prompt with the available commands
+!dnd-good:	    Generates a random character with a good stat spread for the generated class
+!dnd-bad:	    Generates a random character with a bad stat spread for the generated class
 !dnd-random:	Generates a random character with a random stat spread without taking class into consideration
 
 
@@ -51,4 +61,5 @@ commands in Discord to interact with it:
 Creator:	Sebastian Werner	https://github.com/Se-Werner	https://www.linkedin.com/in/sebastian-werner-13a991191/
 
 This app was created by using these resources:
-https://realpython.com/how-to-make-a-discord-bot-python/
+How to Make a Discord Bot in Python - Alex Ronquillo: https://realpython.com/how-to-make-a-discord-bot-python/
+Docker Tutorial for Beginners [FULL COURSE in 3 Hours] - TechWorld with Nana: https://youtu.be/3c-iBn73dDE
